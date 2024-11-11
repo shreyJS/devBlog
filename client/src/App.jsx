@@ -14,6 +14,7 @@ import UpdatePost from "./pages/UpdatePost";
 import PostPage from './pages/PostPage'
 import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
+import LightWeight from "./pages/LightWeight";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         </Route>
         <Route path="/projects" element={<Projects />} />
         <Route path="/post/:postSlug" element={<PostPage />} />
+        <Route path='/lightweight'element={<LightWeight/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
